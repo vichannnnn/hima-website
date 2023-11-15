@@ -1,9 +1,9 @@
 .footer-container {
     display: flex;
-    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     margin-bottom: 24px;
+    margin-top: 96px;
     justify-content: center;
 }
