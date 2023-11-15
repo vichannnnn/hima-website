@@ -1,6 +1,6 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material';
-import { Footer, Header, LandingPage } from '@features';
+import { Footer, Header, LandingPage, Links } from '@features';
 
 const customMuiTheme = {
   components: {
@@ -44,6 +44,7 @@ export function App() {
         <Header />
         <Routes>
           <Route path='/' element={<LandingPage />} />
+          <Route path='/links' element={<Links />} />
           {/*<Route path='*' element={<NotFound />} />*/}
         </Routes>
         <Footer />

@@ -1,0 +1,16 @@
+.hero-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 128px;
+}
+
+.hero-subtitle {
+    width: 80%;
+    font-size: 1.5rem;
+    color: #666;
+    margin: auto auto 2rem;
+}
