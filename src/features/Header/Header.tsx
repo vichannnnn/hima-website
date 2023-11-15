@@ -1,7 +1,7 @@
 import { Link as RouterLink } from 'react-router-dom';
 import { Button } from '@components';
-import './Header.css';
 import { useNavigation } from '@utils';
+import './Header.css';
 
 export const Header = () => {
   const { goToHome, goToLink, goToResume, goToBlog } = useNavigation();

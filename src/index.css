@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Press Start 2P";
+  src: local('PressStart-2P'), url('./fonts/PressStart2P-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   font-family: PatrickHandSC, sans-serif;
   line-height: 1.5;
