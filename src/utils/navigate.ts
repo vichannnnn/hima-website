@@ -10,6 +10,7 @@ export const useNavigation = () => {
     window.open('https://www.instagram.com/plum.blossoms.in.the.snow/', '_blank');
   const goToLinkedIn = () =>
     window.open('https://www.linkedin.com/in/hima7459/?_l=en_US', '_blank');
+  const goToGitHub = () => window.open('https://www.github.com/vichannnnn', '_blank');
   const goToHolyGrail = () => window.open('https://grail.moe', '_blank');
   const goToResume = () => window.open('https://image.himaa.me/hima-anon-resume.pdf', '_blank');
 
@@ -19,6 +20,7 @@ export const useNavigation = () => {
     goToBlog,
     goToInstagram,
     goToLinkedIn,
+    goToGitHub,
     goToHolyGrail,
     goToResume,
   };
