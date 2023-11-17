@@ -16,10 +16,19 @@
 
 }
 
+
 .menu-container {
     display: flex;
     margin: auto;
     gap: 16px;
+}
+
+.mobile-dropdown-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0;
+
 }
 
 .nav_logo {

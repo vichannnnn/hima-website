@@ -7,7 +7,7 @@ export const Hero = () => {
       <div className='hero-content'>
         <h1 className='hero-title'>
           <TypeAnimation
-            sequence={['Everything about Hima', 5000, 'Everything about Violet']}
+            sequence={['Everything about Hima', 3000, 'Everything about Violet', 3000]}
             speed={50}
             cursor={false}
             repeat={Infinity}

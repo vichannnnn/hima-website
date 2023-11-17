@@ -1,10 +1,13 @@
+import { useContext } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import { Button } from '@components';
-import { useNavigation } from '@utils';
+import { MediaQueryContext } from '@providers';
+import { ButtonsRow } from './ButtonsRow';
+import { Dropdown } from './Dropdown';
 import './Header.css';
 
 export const Header = () => {
-  const { goToHome, goToLink, goToResume, goToBlog } = useNavigation();
+  const { isDesktop768 } = useContext(MediaQueryContext);
+
   return (
     <header className='header'>
       <div className='header-container'>
@@ -14,12 +17,15 @@ export const Header = () => {
             alt='Will change next week~ Placeholder!'
           />
         </RouterLink>
-        <div className='menu-container'>
-          <Button onClick={goToHome}>About</Button>
-          <Button onClick={goToBlog}>Blog</Button>
-          <Button onClick={goToLink}>Links</Button>
-          <Button onClick={goToResume}>Resume</Button>
-        </div>
+        {isDesktop768 ? (
+          <div className='menu-container'>
+            <ButtonsRow />
+          </div>
+        ) : (
+          <div className='mobile-dropdown-container'>
+            <Dropdown />
+          </div>
+        )}
       </div>
     </header>
   );

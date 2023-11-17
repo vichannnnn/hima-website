@@ -1,6 +1,7 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material';
 import { Footer, Header, LandingPage, Links } from '@features';
+import { MediaQueryProvider } from '@providers';
 
 const customMuiTheme = {
   components: {
@@ -41,13 +42,15 @@ export function App() {
   return (
     <BrowserRouter>
       <ThemeProvider theme={muiTheme}>
-        <Header />
-        <Routes>
-          <Route path='/' element={<LandingPage />} />
-          <Route path='/links' element={<Links />} />
-          {/*<Route path='*' element={<NotFound />} />*/}
-        </Routes>
-        <Footer />
+        <MediaQueryProvider>
+          <Header />
+          <Routes>
+            <Route path='/' element={<LandingPage />} />
+            <Route path='/links' element={<Links />} />
+            {/*<Route path='*' element={<NotFound />} />*/}
+          </Routes>
+          <Footer />
+        </MediaQueryProvider>
       </ThemeProvider>
     </BrowserRouter>
   );

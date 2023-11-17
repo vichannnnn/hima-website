@@ -19,7 +19,8 @@
     "paths": {
       "@components": ["src/components/"],
       "@features": ["src/features/"],
-      "@utils": ["src/utils/"]
+      "@utils": ["src/utils/"],
+      "@providers": ["src/providers/"]
     }
   },
   "include": ["src"],
