@@ -6,7 +6,7 @@ WORKDIR /app
 COPY package.json bun.lockb ./
 RUN bun install --frozen-lockfile
 COPY . .
-RUN bun builds
+RUN bun run build
 
 FROM caddy:2.6.2-alpine AS deploy
 EXPOSE 443
