@@ -12,7 +12,7 @@ export const Header = () => {
     <header className='header'>
       <div className='header-container'>
         <RouterLink className='nav_logo' to='/'>
-          <img src='https://image.himaa.me/hima_oc.png' alt='Hima!' />
+          <img src='https://image.himaa.me/hima_oc_black_socks.png' alt='Hima!' />
         </RouterLink>
         {isDesktop768 ? (
           <div className='menu-container'>
