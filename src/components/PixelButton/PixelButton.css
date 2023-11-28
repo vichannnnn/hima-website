@@ -1,4 +1,7 @@
-
+:root {
+    --pixel-size: 12px;
+    --pixel-shadow-size: 6px;
+}
 
 /* ------------------- Button Grid styles ------------------- */
 .pixel-grid {
@@ -6,15 +9,14 @@
     display: grid;
     row-gap: 0;
     column-gap:0;
-    grid-template-columns: repeat(20, 20px);
-
-    filter: drop-shadow(0 20px 0 #545454);
+    grid-template-columns: repeat(20, var(--pixel-size));
+    filter: drop-shadow(0 var(--pixel-shadow-size) 0 #545454);
     cursor: pointer;
 }
 
 .pixel-grid:active {
-    transform: translate(0,20px);
-    filter: drop-shadow(0 0 0 #545454)
+    transform: translate(0,var(--pixel-shadow-size));
+    filter: drop-shadow(0 0 0 #545454);
 }
 
 .pixel-container {
@@ -33,13 +35,18 @@
     font-family: 'Press Start 2P', sans-serif;
     color: black;
 
-    font-size: 16px;
+    font-size: 12px;
     width: 100%;
     height: 100%;
-    top: 75%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.text img {
+    height: 2em;
+    vertical-align: middle;
 }
 
 
@@ -47,30 +54,56 @@
 
 .transparent {
     background-color: transparent;
-    height: 20px;
-    width: 20px;
+    height: var(--pixel-size);
+    width: var(--pixel-size);
 }
 
 .black {
     background-color: black;
-    height: 20px;
-    width: 20px;
+    height: var(--pixel-size);
+    width: var(--pixel-size);
 }
 
-.lightg {
-    background-color: #909090;
-    height: 20px;
-    width: 20px;
+.black.top {
+    height: calc(var(--pixel-size) - 5px);
+
+}
+
+.pixel-grid:active .black.top {
+    filter: drop-shadow(0 5px 0 #545454);
+}
+
+.black.bottom {
+    height: calc(var(--pixel-size) - 5px);
+    margin-top: 5px;
+    filter: drop-shadow(0 -5px 0 #fcfbf8);
 }
 
 .white {
     background-color: white;
-    height: 20px;
-    width: 20px;
+    height: var(--pixel-size);
+    width: var(--pixel-size);
 }
 
-.grey {
-    background-color: #545454;
-    height: 20px;
-    width: 20px;
+.corner {
+    background-color: black;
+    height: var(--pixel-size);
+    width: var(--pixel-size);
+
+}
+
+.corner.top-left {
+    border-top-left-radius: 8px;
+}
+
+.corner.top-right {
+    border-top-right-radius: 8px;
+}
+
+.corner.bottom-left {
+    border-bottom-left-radius: 8px;
+}
+
+.corner.bottom-right {
+    border-bottom-right-radius: 8px;
 }

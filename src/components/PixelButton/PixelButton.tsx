@@ -9,6 +9,12 @@ interface ButtonBaseProps extends ButtonProps {
 
 export const PixelButton = forwardRef<HTMLButtonElement, ButtonBaseProps>(
   ({ onClick, sx, children, ...props }, ref) => {
+    const horizontalGrid = (length: number, color: string) => {
+      return new Array(length)
+        .fill(null)
+        .map((_, index) => <div key={index} className={color}></div>);
+    };
+
     return (
       <ButtonBase
         sx={{
@@ -33,131 +39,29 @@ export const PixelButton = forwardRef<HTMLButtonElement, ButtonBaseProps>(
           <div className='pixel-grid'>
             <div className='text'>{children}</div>
 
-            <div className='transparent'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='transparent'></div>
+            <div className='corner top-left'></div>
+            {horizontalGrid(18, 'black top')}
+            <div className='corner top-right'></div>
 
             <div className='black'></div>
-            <div className='lightg'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='lightg'></div>
+            {horizontalGrid(18, 'white')}
             <div className='black'></div>
 
             <div className='black'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
+            {horizontalGrid(18, 'white')}
             <div className='black'></div>
 
             <div className='black'></div>
-            <div className='lightg'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='white'></div>
-            <div className='lightg'></div>
+            {horizontalGrid(18, 'white')}
             <div className='black'></div>
 
             <div className='black'></div>
-            <div className='grey'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='lightg'></div>
-            <div className='grey'></div>
+            {horizontalGrid(18, 'white')}
             <div className='black'></div>
 
-            <div className='transparent'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='black'></div>
-            <div className='transparent'></div>
+            <div className='corner bottom-left'></div>
+            {horizontalGrid(18, 'black bottom')}
+            <div className='corner bottom-right'></div>
           </div>
         </div>
       </ButtonBase>
