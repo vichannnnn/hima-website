@@ -5,6 +5,7 @@ import './Hero.css';
 export const Hero = () => {
   return (
     <div className='hero-container'>
+      <img src='https://image.himaa.me/hima-chan-posing.png' alt='Hima!' width='225' />
       <div className='hero-content'>
         <h1 className='hero-title'>
           <TypeAnimation

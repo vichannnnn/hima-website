@@ -1,7 +1,10 @@
-import {Hero} from "../Hero";
+import { Hero } from '../Hero';
+import './LandingPage.css';
 
 export const LandingPage = () => {
-    return <>
-    <Hero/>
-    </>;
+  return (
+    <div className='landing-page'>
+      <Hero />
+    </div>
+  );
 };
