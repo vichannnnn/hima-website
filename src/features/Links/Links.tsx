@@ -13,10 +13,6 @@ export const Links = () => {
         <h1>Personal Links</h1>
       </FadeIn>
       <div className='links-section'>
-        <PixelButton onClick={goToInstagram}>
-          <img src='https://image.himaa.me/pixel-instagram.png' alt='ig'></img> Instagram
-        </PixelButton>
-        <br></br>
         <PixelButton onClick={goToLinkedIn}>
           <img src='https://image.himaa.me/pixel-linkedin.png' alt='ig'></img> LinkedIn
         </PixelButton>

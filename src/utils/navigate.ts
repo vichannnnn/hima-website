@@ -6,8 +6,6 @@ export const useNavigation = () => {
   const goToHome = (options = {}) => navigate('/', options);
   const goToLink = (options = {}) => navigate('/links', options);
   const goToBlog = () => window.open('https://blog.himaa.me', '_blank');
-  const goToInstagram = () =>
-    window.open('https://www.instagram.com/plum.blossoms.in.the.snow/', '_blank');
   const goToLinkedIn = () =>
     window.open('https://www.linkedin.com/in/hima7459/?_l=en_US', '_blank');
   const goToGitHub = () => window.open('https://www.github.com/vichannnnn', '_blank');
@@ -18,7 +16,6 @@ export const useNavigation = () => {
     goToHome,
     goToLink,
     goToBlog,
-    goToInstagram,
     goToLinkedIn,
     goToGitHub,
     goToHolyGrail,
