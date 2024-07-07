@@ -1,0 +1,107 @@
+:root {
+    --pixel-size: 12px;
+    --pixel-shadow-size: 6px;
+}
+
+/* ------------------- Button Grid styles ------------------- */
+.pixel-grid {
+    position: relative;
+    display: grid;
+    row-gap: 0;
+    column-gap:0;
+    grid-template-columns: repeat(20, var(--pixel-size));
+    filter: drop-shadow(0 var(--pixel-shadow-size) 0 #545454);
+    cursor: pointer;
+}
+
+.pixel-grid:active {
+    transform: translate(0,var(--pixel-shadow-size));
+    filter: drop-shadow(0 0 0 #545454);
+}
+
+.pixel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ------------------- text styles ------------------- */
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    filter: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    gap: 8px;
+}
+
+.text img {
+    height: 2em;
+    vertical-align: middle;
+}
+
+
+/* ------------------- pixel styles ------------------- */
+
+.transparent {
+    background-color: transparent;
+    height: var(--pixel-size);
+    width: var(--pixel-size);
+}
+
+.black {
+    background-color: black;
+    height: var(--pixel-size);
+    width: var(--pixel-size);
+}
+
+.black.top {
+    height: calc(var(--pixel-size) - 5px);
+
+}
+
+.pixel-grid:active .black.top {
+    filter: drop-shadow(0 5px 0 #545454);
+}
+
+.black.bottom {
+    height: calc(var(--pixel-size) - 5px);
+    margin-top: 5px;
+    filter: drop-shadow(0 -5px 0 #fcfbf8);
+}
+
+.white {
+    background-color: white;
+    height: var(--pixel-size);
+    width: var(--pixel-size);
+}
+
+.corner {
+    background-color: black;
+    height: var(--pixel-size);
+    width: var(--pixel-size);
+
+}
+
+.corner.top-left {
+    border-top-left-radius: 8px;
+}
+
+.corner.top-right {
+    border-top-right-radius: 8px;
+}
+
+.corner.bottom-left {
+    border-bottom-left-radius: 8px;
+}
+
+.corner.bottom-right {
+    border-bottom-right-radius: 8px;
+}

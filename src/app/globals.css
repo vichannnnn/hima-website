@@ -2,10 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: PatrickHandSC;
+    src: local('PatrickHandSC'), url('../fonts/PatrickHandSC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: PressStart2P;
+    src: local('PressStart2P'), url('../fonts/PressStart2P-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #213547;
+  background-color: #fcfbf8;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,18 +44,47 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+a {
+  font-family: "PatrickHandSC", sans-serif;
+  font-weight: 500;
+  font-size: 0.875em;
+  text-decoration: inherit;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+p {
+  font-family: "PatrickHandSC", sans-serif;
+  font-size: 0.875em;
+}
+
+h1 {
+  font-family: "PatrickHandSC", sans-serif;
+  font-size: 2em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: "PatrickHandSC", sans-serif;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: "PatrickHandSC", sans-serif;
+  font-size: 1.17em;
+}
+
+h4 {
+  font-family: "PatrickHandSC", sans-serif;
+  font-size: 1em;
+}
+
+body {
+  font-family: "PatrickHandSC", sans-serif;
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
 }

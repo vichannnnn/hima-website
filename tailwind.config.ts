@@ -13,7 +13,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        PatrickHandSC: ['PatrickHandSC', 'sans-serif'],
+        PressStart2P: ['PressStart2P', 'sans-serif'],
+      },
     },
+
   },
   plugins: [],
 };
