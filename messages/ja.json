@@ -1,0 +1,31 @@
+{
+  "LandingPage": {
+    "title_one": "ひまちゃんの全部",
+    "title_two": "バイオレットの全部",
+    "description_paragraph_one": "やはろ～ 私はひま、シンガポールでフルスタックソフトウェアエンジニアとして働いています！",
+    "description_paragraph_two": "以前は、地元のゲーム会社で2年間JRPGアニメスタイルのモバイルゲームを開発するゲームデザイナーでしたが、フリーランスのバックエンドエンジニアとしてソフトウェアエンジニアリングに転向しました！",
+    "description_paragraph_three": "プロフェッショナルおよび個人的な能力において、バックエンド、フロントエンド、クラウド、ソリューションアーキテクチャリング、DevOpsに至るまであらゆることを少しずつ手掛けており、現在のフルタイムの仕事ではMLOpsも少し担当しています。"
+  },
+  "NotFoundPage": {
+    "title": "404 - ページが見つかりません",
+    "description": "ここにいるはずがありません！探しているページまたはコンテンツはおそらくここには存在しません…まだ",
+    "back_to_home": "ホームに戻る"
+  },
+  "Links": {
+    "personal_title": "個人リンク",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "instagram": "Instagram",
+    "project_title": "ひまのプロジェクト！",
+    "holy_grail" : "Holy Grail"
+  },
+  "Buttons": {
+    "about": "プロフィール",
+    "blog": "ブログ",
+    "links": "リンク",
+    "resume": "履歴書"
+  },
+  "Footer": {
+    "text": "質問がありますか？ violet@himaa.me にお問い合わせください"
+  }
+}

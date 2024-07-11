@@ -19,8 +19,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonBaseProps>(
           color: 'black',
           textTransform: 'capitalize',
           fontFamily: 'PatrickHandSC, sans-serif',
-          padding: '8px 36px',
-          fontSize: '24px',
+          padding: '8px 24px',
+          fontSize: '20px',
           borderRadius: '50px',
           '&:hover': {
             backgroundColor: '#aed1ca',
@@ -35,7 +35,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonBaseProps>(
         }}
         {...props}
       >
-        <div>{children}</div>
+        <p>{children}</p>
       </ButtonBase>
     );
   },

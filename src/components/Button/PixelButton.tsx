@@ -2,6 +2,8 @@ import { forwardRef, MouseEvent } from 'react';
 import { Button as ButtonBase, ButtonProps, SxProps, Theme } from '@mui/material';
 import './PixelButton.css';
 
+// Using CSS here because there are a lot of changes to move to Tailwind and not touching anything that is working properly.
+
 interface ButtonBaseProps extends ButtonProps {
   onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
   sx?: SxProps<Theme>;

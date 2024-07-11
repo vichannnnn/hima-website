@@ -8,9 +8,12 @@ import InfoIcon from '@mui/icons-material/Info';
 import ArticleIcon from '@mui/icons-material/Article';
 import LinkIcon from '@mui/icons-material/Link';
 import DescriptionIcon from '@mui/icons-material/Description';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@navigation';
+import { LanguageToggleButton } from './LanguageToggleButton';
 
 export const Dropdown = () => {
+  const t = useTranslations('Buttons');
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
@@ -46,7 +49,7 @@ export const Dropdown = () => {
             <ListItemIcon>
               <InfoIcon fontSize='small' />
             </ListItemIcon>
-            About
+            {t('about')}
           </MenuItem>
         </Link>
         <Link href='https://blog.himaa.me' passHref>
@@ -54,7 +57,7 @@ export const Dropdown = () => {
             <ListItemIcon>
               <ArticleIcon fontSize='small' />
             </ListItemIcon>
-            Blog
+            {t('blog')}
           </MenuItem>
         </Link>
         <Link href='/links' passHref>
@@ -62,7 +65,7 @@ export const Dropdown = () => {
             <ListItemIcon>
               <LinkIcon fontSize='small' />
             </ListItemIcon>
-            Links
+            {t('links')}
           </MenuItem>
         </Link>
         <Link href='https://image.himaa.me/hima-anon-resume.pdf' passHref>
@@ -70,9 +73,10 @@ export const Dropdown = () => {
             <ListItemIcon>
               <DescriptionIcon fontSize='small' />
             </ListItemIcon>
-            Resume
+            {t('resume')}
           </MenuItem>
         </Link>
+        <LanguageToggleButton />
       </Menu>
     </div>
   );

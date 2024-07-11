@@ -1,20 +1,22 @@
+import { useTranslations } from 'next-intl';
 import { Button } from '@components';
-import Link from 'next/link';
+import { Link } from '@navigation';
 
 export const ButtonsRow = () => {
+  const t = useTranslations('Buttons');
   return (
     <>
       <Link href='/' passHref>
-        <Button>About</Button>
+        <Button>{t('about')}</Button>
       </Link>
       <Link href='https://blog.himaa.me' passHref>
-        <Button>Blog</Button>
+        <Button>{t('blog')}</Button>
       </Link>
       <Link href='/links' passHref>
-        <Button>Links</Button>
+        <Button>{t('links')}</Button>
       </Link>
       <Link href='https://image.himaa.me/hima-anon-resume.pdf' passHref>
-        <Button>Resume</Button>
+        <Button>{t('resume')}</Button>
       </Link>
     </>
   );

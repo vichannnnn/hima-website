@@ -1,0 +1,32 @@
+{
+  "LandingPage": {
+    "title_one": "Everything about Hima",
+    "title_two": "Everything about Violet",
+    "description_paragraph_one": "Yahallo~ I'm Hima, working as a Full-Stack Software Engineer in\nSingapore.",
+    "description_paragraph_two": "I was previously a Game Designer at a local game company developing JRPG\nanime-style mobile games for two years before transitioning into Software Engineering as a\nfreelance Backend Engineer!",
+    "description_paragraph_three": "I dabble in a bit of everything in both my professional and personal capacity,\nfrom both backend and frontend to cloud, solution architecture and DevOps, with a dash of MLOps!"
+  },
+  "NotFoundPage": {
+    "title": "404 - Page Not Found",
+    "description": "You shouldn't be here! The page or whatever content you're trying to look for\n probably doesn't exist here.. yet.",
+    "back_to_home": "Back to home"
+  },
+  "Links": {
+    "personal_title": "Personal Links",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "instagram": "Instagram",
+    "project_title": "My Projects!",
+    "holy_grail" : "Holy Grail"
+  },
+  "Buttons": {
+    "about": "About",
+    "blog": "Blog",
+    "links": "Links",
+    "resume": "Resume"
+
+  },
+  "Footer": {
+    "text": "Questions? Contact me at violet@himaa.me"
+  }
+}

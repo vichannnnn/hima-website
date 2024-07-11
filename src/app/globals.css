@@ -17,6 +17,14 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: Fafo Nihongo;
+    src: local('Fafo Nihongo'), url('../fonts/Fafo Nihongo.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+
 
 }
 
@@ -45,40 +53,40 @@
 }
 
 a {
-  font-family: "PatrickHandSC", sans-serif;
+  font-family: "PatrickHandSC", "Fafo Nihongo", sans-serif;
   font-weight: 500;
   font-size: 0.875em;
   text-decoration: inherit;
 }
 
 p {
-  font-family: "PatrickHandSC", sans-serif;
+  font-family: "PatrickHandSC", "Fafo Nihongo", sans-serif;
   font-size: 0.875em;
 }
 
 h1 {
-  font-family: "PatrickHandSC", sans-serif;
+  font-family: "PatrickHandSC", "Fafo Nihongo", sans-serif;
   font-size: 2em;
   line-height: 1.1;
 }
 
 h2 {
-  font-family: "PatrickHandSC", sans-serif;
+  font-family: "PatrickHandSC", "Fafo Nihongo", sans-serif;
   font-size: 1.5em;
 }
 
 h3 {
-  font-family: "PatrickHandSC", sans-serif;
+  font-family: "PatrickHandSC", "Fafo Nihongo", sans-serif;
   font-size: 1.17em;
 }
 
 h4 {
-  font-family: "PatrickHandSC", sans-serif;
+  font-family: "PatrickHandSC", "Fafo Nihongo", sans-serif;
   font-size: 1em;
 }
 
 body {
-  font-family: "PatrickHandSC", sans-serif;
+  font-family: "PatrickHandSC", "Fafo Nihongo", sans-serif;
   margin: 0;
   place-items: center;
   min-width: 320px;
