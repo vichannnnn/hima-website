@@ -1,15 +1,15 @@
 ---
-version: '3.8'
 
 services:
   hima-website:
     ports:
       - '3000:3000'
-    image: hima-website-v2
+    platform: linux/x86_64
+    build: .
     container_name: hima-website
     networks:
       - hima-website-network
-    command: bun run start
+    command: pnpm run start
     restart:
       always
 

@@ -1,4 +1,4 @@
-FROM oven/bun:1.1.18 as base
+FROM node:18 AS base
 
 FROM base AS build
 
@@ -6,7 +6,8 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-COPY package.json bun.lockb ./
-RUN bun install --frozen-lockfile
+COPY package.json pnpm-lock.yaml ./
+RUN npm install -g pnpm && pnpm install --frozen-lockfile
+
 COPY . .
-RUN bun run build
+RUN pnpm run build
