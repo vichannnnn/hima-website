@@ -2,7 +2,7 @@
 
 import { ReactNode } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material';
-import { MediaQueryProvider } from '@/providers';
+import { MediaQueryProvider } from '@providers/MediaQueryProvider';
 
 const customMuiTheme = {
   components: {

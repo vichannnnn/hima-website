@@ -2,9 +2,9 @@
 
 import { MouseEvent, useContext, useState } from 'react';
 import { useLocale } from 'next-intl';
-import { Button } from '@/components';
-import { MediaQueryContext } from '@/providers';
-import { Link, usePathname } from '@/navigation';
+import { Button } from '@components/Button';
+import { MediaQueryContext } from '@providers/MediaQueryProvider';
+import { Link, usePathname } from '@navigation';
 import { ListItemIcon, Menu, MenuItem } from '@mui/material';
 
 interface LocaleData {

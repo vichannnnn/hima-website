@@ -1,10 +1,10 @@
 'use client';
 
 import FadeIn from 'react-fade-in';
-import { Link } from '@/navigation';
+import { PixelButton } from '@components/Button';
+import { Link } from '@navigation';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { PixelButton } from '@/components';
 
 const Links = () => {
   const t = useTranslations('Links');

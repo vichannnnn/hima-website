@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
-import { Button } from '@/components';
-import { Link } from '@/navigation';
+import { Button } from '@components/Button';
+import { Link } from '@navigation';
 
 export const ButtonsRow = () => {
   const t = useTranslations('Buttons');

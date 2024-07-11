@@ -1,15 +1,15 @@
 'use client';
 
 import { useState, MouseEvent } from 'react';
-import { Button } from '@/components';
+import { useTranslations } from 'next-intl';
+import { Button } from '@components/Button';
+import { Link } from '@navigation';
 import { ListItemIcon, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import InfoIcon from '@mui/icons-material/Info';
 import ArticleIcon from '@mui/icons-material/Article';
 import LinkIcon from '@mui/icons-material/Link';
 import DescriptionIcon from '@mui/icons-material/Description';
-import { useTranslations } from 'next-intl';
-import { Link } from '@/navigation';
 import { LanguageToggleButton } from './LanguageToggleButton';
 
 export const Dropdown = () => {
