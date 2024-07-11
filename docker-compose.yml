@@ -5,10 +5,10 @@ services:
   hima-website:
     ports:
       - '3000:3000'
+    image: hima-website-v2
     container_name: hima-website
     networks:
       - hima-website-network
-    build: .
     command: npm run start
     restart:
       always
