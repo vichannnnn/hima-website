@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import FadeIn from 'react-fade-in';
 import { TypeAnimation } from 'react-type-animation';
 import { useTranslations } from 'next-intl';
 
@@ -25,17 +24,16 @@ export const Hero = () => {
           repeat={Infinity}
         />
       </h1>
-      <FadeIn>
-        <p className='w-4/5 text-2xl mx-auto mt-8'>
-          {t('description_paragraph_one')}
-          <br />
-          <br />
-          {t('description_paragraph_two')}
-          <br />
-          <br />
-          {t('description_paragraph_three')}
-        </p>
-      </FadeIn>
+
+      <p className='w-4/5 text-2xl mx-auto mt-8'>
+        {t('description_paragraph_one')}
+        <br />
+        <br />
+        {t('description_paragraph_two')}
+        <br />
+        <br />
+        {t('description_paragraph_three')}
+      </p>
     </div>
   );
 };

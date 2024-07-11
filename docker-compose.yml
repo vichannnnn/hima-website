@@ -9,7 +9,7 @@ services:
     container_name: hima-website
     networks:
       - hima-website-network
-    command: npm run start
+    command: bun run start
     restart:
       always
 

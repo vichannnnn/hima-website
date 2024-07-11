@@ -1,12 +1,12 @@
-FROM node:22-alpine3.19 as base
+FROM oven/bun:1.1.18 as base
 
 FROM base AS build
 
 WORKDIR /app
 
-#ENV NODE_ENV=production
+ENV NODE_ENV=production
 
-COPY package.json package-lock.json ./
-RUN npm install --frozen-lockfile --legacy-peer-deps
+COPY package.json bun.lockb ./
+RUN bun install --frozen-lockfile
 COPY . .
-RUN npm run build
+RUN bun run build

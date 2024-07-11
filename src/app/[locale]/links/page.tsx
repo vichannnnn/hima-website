@@ -1,6 +1,5 @@
 'use client';
 
-import FadeIn from 'react-fade-in';
 import { PixelButton } from '@components/Button';
 import { Link } from '@navigation';
 import Image from 'next/image';
@@ -11,9 +10,7 @@ const Links = () => {
 
   return (
     <div className='flex flex-col items-center gap-6 mb-48'>
-      <FadeIn>
-        <h1 className='mt-4 mb-4'>{t('personal_title')}</h1>
-      </FadeIn>
+      <h1 className='mt-4 mb-4'>{t('personal_title')}</h1>
       <div className='flex flex-col'>
         <Link href='https://www.linkedin.com/in/hima7459/' passHref>
           <PixelButton>
@@ -52,9 +49,7 @@ const Links = () => {
         </Link>
       </div>
 
-      <FadeIn>
-        <h1>{t('project_title')}</h1>
-      </FadeIn>
+      <h1>{t('project_title')}</h1>
       <div className='flex flex-col'>
         <Link href='https://mugg.ing' passHref>
           <PixelButton>
