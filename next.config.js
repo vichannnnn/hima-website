@@ -1,7 +1,20 @@
 const withNextIntl = require('next-intl/plugin')();
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 /** @type {import('next').NextConfig} */
 const config = {
+  webpack: (config, options) => {
+    if (!config.resolve.plugins) {
+      config.resolve.plugins = [];
+    }
+    config.resolve.plugins.push(
+      new TsconfigPathsPlugin({
+        configFile: './tsconfig.json',
+      }),
+    );
+
+    return config;
+  },
   images: {
     remotePatterns: [
       {
