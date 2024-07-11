@@ -9,7 +9,7 @@ services:
     networks:
       - hima-website-network
     build: .
-    command: yarn run start
+    command: npm run start
     restart:
       always
 
