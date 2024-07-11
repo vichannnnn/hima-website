@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, MouseEvent } from 'react';
-import { Button } from '@components';
+import { Button } from '@/components';
 import { ListItemIcon, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import InfoIcon from '@mui/icons-material/Info';

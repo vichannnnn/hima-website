@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { Header, Footer } from '@components';
-import { Providers } from '@providers';
+import { Header, Footer } from '@/components';
+import { Providers } from '@/providers';
 import '../globals.css';
 
 export const metadata: Metadata = {

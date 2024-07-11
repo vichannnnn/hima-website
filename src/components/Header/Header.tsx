@@ -3,7 +3,7 @@
 import { useContext } from 'react';
 import Image from 'next/image';
 
-import { MediaQueryContext } from '@providers';
+import { MediaQueryContext } from '@/providers';
 import { ButtonsRow } from './ButtonsRow';
 import { Dropdown } from './Dropdown';
 import { Link } from '@/navigation';

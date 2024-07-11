@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import { Button } from '@components';
+import { Button } from '@/components';
 import { Link } from '@/navigation';
 
 export const ButtonsRow = () => {
