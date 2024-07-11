@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { MediaQueryContext } from '@providers';
 import { ButtonsRow } from './ButtonsRow';
 import { Dropdown } from './Dropdown';
-import { Link } from '@navigation';
+import { Link } from '@/navigation';
 import { LanguageToggleButton } from './LanguageToggleButton';
 
 export const Header = () => {

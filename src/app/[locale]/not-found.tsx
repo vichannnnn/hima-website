@@ -1,7 +1,7 @@
-import { Link } from '@navigation';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Button } from '@components';
+import { Link } from '@/navigation';
 
 const NotFound = () => {
   const t = useTranslations('NotFoundPage');

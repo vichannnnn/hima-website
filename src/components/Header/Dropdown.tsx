@@ -9,7 +9,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 import LinkIcon from '@mui/icons-material/Link';
 import DescriptionIcon from '@mui/icons-material/Description';
 import { useTranslations } from 'next-intl';
-import { Link } from '@navigation';
+import { Link } from '@/navigation';
 import { LanguageToggleButton } from './LanguageToggleButton';
 
 export const Dropdown = () => {
