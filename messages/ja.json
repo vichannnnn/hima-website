@@ -1,4 +1,17 @@
 {
+  "Metadata": {
+    "Index": {
+    "title": "ひま",
+    "description": "ひまちゃんの全部！",
+    "keywords": "ひま,ソフトウェアエンジニア,シンガポール"
+    },
+    "Links": {
+      "title":
+      "ひま | リンク",
+      "description": "ひまちゃんの全部！",
+      "keywords": "ひま,ソフトウェアエンジニア,シンガポール"
+    }
+  },
   "LandingPage": {
     "title_one": "ひまちゃんの全部",
     "title_two": "バイオレットの全部",

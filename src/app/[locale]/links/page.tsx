@@ -1,9 +1,31 @@
-'use client';
-
-import { PixelButton } from '@components/Button';
-import { Link } from '@navigation';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
+import { PixelButton } from '@components/Button';
+import { Link } from '@navigation';
+
+type MetadataProps = {
+  params: { locale: string };
+};
+
+export async function generateMetadata({ params: { locale } }: MetadataProps) {
+  const t = await getTranslations({ locale, namespace: 'Metadata' });
+
+  return {
+    title: t('Links.title'),
+    description: t('Links.description'),
+    keywords: t('Links.keywords'),
+    openGraph: {
+      title: t('Links.title'),
+      description: t('Links.description'),
+      images: [
+        {
+          url: 'https://image.himaa.me/hima-chan-posing.png',
+        },
+      ],
+    },
+  };
+}
 
 const Links = () => {
   const t = useTranslations('Links');

@@ -1,4 +1,17 @@
 {
+  "Metadata": {
+    "Index": {
+      "title": "Hima",
+      "description": "Everything about Hima!",
+      "keywords": "software engineer,web development,singapore,hima"
+    },
+    "Links": {
+      "title":
+    "Hima | Links",
+    "description": "Everything about Hima!",
+    "keywords": "software engineer,web development,singapore,hima"
+    }
+  },
   "LandingPage": {
     "title_one": "Everything about Hima",
     "title_two": "Everything about Violet",
