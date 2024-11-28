@@ -6,7 +6,7 @@ export const ButtonsRow = () => {
   const t = useTranslations('Buttons');
   return (
     <>
-      <Link href='/frontend/public' passHref>
+      <Link href='/' passHref>
         <Button>{t('about')}</Button>
       </Link>
       <Link href='https://blog.himaa.me' passHref>
