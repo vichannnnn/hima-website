@@ -1,0 +1,18 @@
+# AWS Project Settings
+
+region   = "ap-southeast-1"
+app_name = "hima-website"
+
+aws_access_key =
+aws_secret_key =
+
+# Domain Names
+# NOTE: We are separating domain name with subdomain name because of how
+# Porkbun handles the domain and subdomain separately
+
+root_domain_name        =
+frontend_subdomain_name =
+
+# GitHub credentials to access Docker Images in GitHub Container Registry
+
+github_token =

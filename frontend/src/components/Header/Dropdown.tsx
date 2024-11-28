@@ -44,7 +44,7 @@ export const Dropdown = () => {
           'aria-labelledby': 'right-button',
         }}
       >
-        <Link href='/' passHref>
+        <Link href='/frontend/public' passHref>
           <MenuItem>
             <ListItemIcon>
               <InfoIcon fontSize='small' />

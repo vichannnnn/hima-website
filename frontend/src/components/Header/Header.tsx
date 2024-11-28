@@ -15,7 +15,7 @@ export const Header = () => {
   return (
     <header className='w-full flex justify-center items-center mx-auto'>
       <div className='w-3/5 pt-8 pb-8 flex justify-start items-center'>
-        <Link className='' href='/' passHref>
+        <Link className='' href='/frontend/public' passHref>
           <Image
             height={128}
             width={128}

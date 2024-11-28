@@ -19,7 +19,7 @@ const NotFound = () => {
         <div className='flex flex-col items-center'>
           <p className='text-xl mt-16 mb-16'>{t('description')}</p>
         </div>
-        <Link href='/' passHref>
+        <Link href='/frontend/public' passHref>
           <Button>{t('back_to_home')}</Button>
         </Link>
       </div>
